@@ -1,0 +1,22 @@
+/* globals.css — PaddleBoard retro CRT aesthetic
+   Pacific Northwest green/gold · dark background · scanlines */
+
+:root {
+  --bg:         #0D1117;
+  --surface:    #161B22;
+  --accent:     #2D5A27;   /* Salish Code forest green */
+  --gold:       #C9A84C;   /* Salish Code gold */
+  --text:       #E6EDF3;
+  --text-muted: #8B949E;
+  --border:     #30363D;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: var(--bg); color: var(--text); font-family: monospace; }
+
+/* TODO: Scanline overlay — ::after pseudo on body, repeating-linear-gradient, ~3% opacity */
+/* TODO: CRT glow on .stream-card — box-shadow: 0 0 12px var(--accent) */
+/* TODO: Chunky .filter-panel buttons — outset border or stacked box-shadow */
+/* TODO: Viewer count + tag pills — monospace, small caps */
+/* TODO: Loading state — CSS noise/static flicker animation */
+/* TODO: .boot-splash — full viewport, dark overlay, centered content */
